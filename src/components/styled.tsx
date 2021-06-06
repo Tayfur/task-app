@@ -16,7 +16,7 @@ export const Container = styled.div`
 export const TaskContainer = styled.div`
   max-width: 350px;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: #ebecf0;
   margin-top: 50px;
   border-radius: 15px;
   display: flex;
@@ -42,7 +42,7 @@ export const TaskTitle = styled.div`
 `;
 export const TaskTitleText = styled.h2`
   font-size: 16px;
-  color: grey;
+  color: gray;
   font-weight: 700;
 `;
 
@@ -52,11 +52,16 @@ export const Card = styled.div`
   position: relative;
   display: flex;
   height: 80px;
-  max-width: 330px;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  background-color: gainsboro;
+
+  background-color: ${(props) => props.color};
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
 `;
 export const CardTask = styled.div`
   width: 100%;
